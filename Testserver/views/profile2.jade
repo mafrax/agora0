@@ -1,0 +1,2765 @@
+doctype html
+html(lang="en")
+  head
+    title Profile Page - Friends
+    // Required meta tags always come first
+    meta(charset="utf-8")
+    | 	
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    | 	
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    // Bootstrap CSS
+    link(rel="stylesheet", type="text/css", href="olympus/src/Bootstrap/dist/css/bootstrap-reboot.css")
+    | 	
+    link(rel="stylesheet", type="text/css", href="olympus/src/Bootstrap/dist/css/bootstrap.css")
+    | 	
+    link(rel="stylesheet", type="text/css", href="olympus/src/Bootstrap/dist/css/bootstrap-grid.css")
+    // Main Styles CSS
+    link(rel="stylesheet", type="text/css", href="olympus/src/css/main.min.css")
+    | 	
+    link(rel="stylesheet", type="text/css", href="olympus/src/css/fonts.min.css")
+    // Main Font
+    script(src="olympus/src/js/webfontloader.min.js")
+    | 	
+    script.
+      WebFont.load({
+      google: {
+      families: ['Roboto:300,400,500,700:latin']
+      }
+      });
+  body
+    // Fixed Sidebar Left
+    .fixed-sidebar
+      #sidebar-left.fixed-sidebar-left.sidebar--small
+        a.logo(href="olympus/src/02-ProfilePage.html")
+          .img-wrap
+            img(src="olympus/src/img/logo.png", alt="Olympus")
+        | 		
+        .mCustomScrollbar(data-mcs-theme="dark")
+          ul.left-menu
+            li
+              a.js-sidebar-open(href="#")
+                svg.olymp-menu-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="OPEN MENU")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-menu-icon")
+            | 				
+            li
+              a(href="olympus/src/03-Newsfeed.html")
+                svg.olymp-newsfeed-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="NEWSFEED")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-newsfeed-icon")
+            | 				
+            li
+              a(href="olympus/src/16-FavPagesFeed.html")
+                svg.olymp-star-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FAV PAGE")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-star-icon")
+            | 				
+            li
+              a(href="olympus/src/17-FriendGroups.html")
+                svg.olymp-happy-faces-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FRIEND GROUPS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-faces-icon")
+            | 				
+            li
+              a(href="olympus/src/18-MusicAndPlaylists.html")
+                svg.olymp-headphones-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="MUSIC&PLAYLISTS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-headphones-icon")
+            | 				
+            li
+              a(href="olympus/src/19-WeatherWidget.html")
+                svg.olymp-weather-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="WEATHER APP")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-weather-icon")
+            | 				
+            li
+              a(href="olympus/src/20-CalendarAndEvents-MonthlyCalendar.html")
+                svg.olymp-calendar-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="CALENDAR AND EVENTS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-calendar-icon")
+            | 				
+            li
+              a(href="olympus/src/24-CommunityBadges.html")
+                svg.olymp-badge-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Community Badges")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-badge-icon")
+            | 				
+            li
+              a(href="olympus/src/25-FriendsBirthday.html")
+                svg.olymp-cupcake-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Friends Birthdays")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-cupcake-icon")
+            | 				
+            li
+              a(href="olympus/src/26-Statistics.html")
+                svg.olymp-stats-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Account Stats")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-stats-icon")
+            | 				
+            li
+              a(href="olympus/src/27-ManageWidgets.html")
+                svg.olymp-manage-widgets-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Manage Widgets")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-manage-widgets-icon")
+      | 	
+      #sidebar-left-1.fixed-sidebar-left.sidebar--large
+        a.logo(href="olympus/src/02-ProfilePage.html")
+          .img-wrap
+            img(src="olympus/src/img/logo.png", alt="Olympus")
+          | 			
+          .title-block
+            h6.logo-title olympus
+        | 		
+        .mCustomScrollbar(data-mcs-theme="dark")
+          ul.left-menu
+            li
+              a.js-sidebar-open(href="#")
+                svg.olymp-close-icon.left-menu-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-close-icon")
+                | 						
+                span.left-menu-title Collapse Menu
+            | 				
+            li
+              a(href="olympus/src/03-Newsfeed.html")
+                svg.olymp-newsfeed-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="NEWSFEED")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-newsfeed-icon")
+                | 						
+                span.left-menu-title Newsfeed
+            | 				
+            li
+              a(href="olympus/src/16-FavPagesFeed.html")
+                svg.olymp-star-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FAV PAGE")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-star-icon")
+                | 						
+                span.left-menu-title Fav Pages Feed
+            | 				
+            li
+              a(href="olympus/src/17-FriendGroups.html")
+                svg.olymp-happy-faces-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FRIEND GROUPS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-faces-icon")
+                | 						
+                span.left-menu-title Friend Groups
+            | 				
+            li
+              a(href="olympus/src/18-MusicAndPlaylists.html")
+                svg.olymp-headphones-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="MUSIC&PLAYLISTS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-headphones-icon")
+                | 						
+                span.left-menu-title Music & Playlists
+            | 				
+            li
+              a(href="olympus/src/19-WeatherWidget.html")
+                svg.olymp-weather-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="WEATHER APP")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-weather-icon")
+                | 						
+                span.left-menu-title Weather App
+            | 				
+            li
+              a(href="olympus/src/20-CalendarAndEvents-MonthlyCalendar.html")
+                svg.olymp-calendar-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="CALENDAR AND EVENTS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-calendar-icon")
+                | 						
+                span.left-menu-title Calendar and Events
+            | 				
+            li
+              a(href="olympus/src/24-CommunityBadges.html")
+                svg.olymp-badge-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Community Badges")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-badge-icon")
+                | 						
+                span.left-menu-title Community Badges
+            | 				
+            li
+              a(href="olympus/src/25-FriendsBirthday.html")
+                svg.olymp-cupcake-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Friends Birthdays")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-cupcake-icon")
+                | 						
+                span.left-menu-title Friends Birthdays
+            | 				
+            li
+              a(href="olympus/src/26-Statistics.html")
+                svg.olymp-stats-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Account Stats")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-stats-icon")
+                | 						
+                span.left-menu-title Account Stats
+            | 				
+            li
+              a(href="olympus/src/27-ManageWidgets.html")
+                svg.olymp-manage-widgets-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Manage Widgets")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-manage-widgets-icon")
+                | 						
+                span.left-menu-title Manage Widgets
+          | 			
+          .profile-completion
+            .skills-item
+              .skills-item-info
+                span.skills-item-title Profile Completion
+                | 						
+                span.skills-item-count
+                  span.count-animate(data-speed="1000", data-refresh-interval="50", data-to="76", data-from="0")
+                  span.units 76%
+              | 					
+              .skills-item-meter
+                span.skills-item-meter-active.bg-primary(style="width: 76%")
+            | 				
+            span
+              | Complete 
+              a(href="#") your profile
+              |  so people can know more about you!
+    // ... end Fixed Sidebar Left
+    // Fixed Sidebar Left
+    .fixed-sidebar.fixed-sidebar-responsive
+      #sidebar-left-responsive.fixed-sidebar-left.sidebar--small
+        a.logo.js-sidebar-open(href="#")
+          img(src="olympus/src/img/logo.png", alt="Olympus")
+      | 	
+      #sidebar-left-1-responsive.fixed-sidebar-left.sidebar--large
+        a.logo(href="#")
+          .img-wrap
+            img(src="olympus/src/img/logo.png", alt="Olympus")
+          | 			
+          .title-block
+            h6.logo-title olympus
+        | 		
+        .mCustomScrollbar(data-mcs-theme="dark")
+          .control-block
+            .author-page.author.vcard.inline-items
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/author-page.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              a.author-name.fn(href="olympus/src/02-ProfilePage.html")
+                .author-title
+                  | James Spiegel 
+                  svg.olymp-dropdown-arrow-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon")
+                | 						
+                span.author-subtitle SPACE COWBOY
+          | 			
+          .ui-block-title.ui-block-title-small
+            h6.title MAIN SECTIONS
+          | 			
+          ul.left-menu
+            li
+              a.js-sidebar-open(href="#")
+                svg.olymp-close-icon.left-menu-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-close-icon")
+                | 						
+                span.left-menu-title Collapse Menu
+            | 				
+            li
+              a(href="mobile-index.html")
+                svg.olymp-newsfeed-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="NEWSFEED")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-newsfeed-icon")
+                | 						
+                span.left-menu-title Newsfeed
+            | 				
+            li
+              a(href="Mobile-28-YourAccount-PersonalInformation.html")
+                svg.olymp-star-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FAV PAGE")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-star-icon")
+                | 						
+                span.left-menu-title Fav Pages Feed
+            | 				
+            li
+              a(href="mobile-29-YourAccount-AccountSettings.html")
+                svg.olymp-happy-faces-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FRIEND GROUPS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-faces-icon")
+                | 						
+                span.left-menu-title Friend Groups
+            | 				
+            li
+              a(href="Mobile-30-YourAccount-ChangePassword.html")
+                svg.olymp-headphones-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="MUSIC&PLAYLISTS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-headphones-icon")
+                | 						
+                span.left-menu-title Music & Playlists
+            | 				
+            li
+              a(href="Mobile-31-YourAccount-HobbiesAndInterests.html")
+                svg.olymp-weather-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="WEATHER APP")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-weather-icon")
+                | 						
+                span.left-menu-title Weather App
+            | 				
+            li
+              a(href="Mobile-32-YourAccount-EducationAndEmployement.html")
+                svg.olymp-calendar-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="CALENDAR AND EVENTS")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-calendar-icon")
+                | 						
+                span.left-menu-title Calendar and Events
+            | 				
+            li
+              a(href="Mobile-33-YourAccount-Notifications.html")
+                svg.olymp-badge-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Community Badges")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-badge-icon")
+                | 						
+                span.left-menu-title Community Badges
+            | 				
+            li
+              a(href="Mobile-34-YourAccount-ChatMessages.html")
+                svg.olymp-cupcake-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Friends Birthdays")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-cupcake-icon")
+                | 						
+                span.left-menu-title Friends Birthdays
+            | 				
+            li
+              a(href="Mobile-35-YourAccount-FriendsRequests.html")
+                svg.olymp-stats-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Account Stats")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-stats-icon")
+                | 						
+                span.left-menu-title Account Stats
+            | 				
+            li
+              a(href="#")
+                svg.olymp-manage-widgets-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="Manage Widgets")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-manage-widgets-icon")
+                | 						
+                span.left-menu-title Manage Widgets
+          | 			
+          .ui-block-title.ui-block-title-small
+            h6.title YOUR ACCOUNT
+          | 			
+          ul.account-settings
+            li
+              a(href="#")
+                svg.olymp-menu-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-menu-icon")
+                | 						
+                span Profile Settings
+            | 				
+            li
+              a(href="#")
+                svg.olymp-star-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FAV PAGE")
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-star-icon")
+                | 						
+                span Create Fav Page
+            | 				
+            li
+              a(href="#")
+                svg.olymp-logout-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-logout-icon")
+                | 						
+                span Log Out
+          | 			
+          .ui-block-title.ui-block-title-small
+            h6.title About Olympus
+          | 			
+          ul.about-olympus
+            li
+              a(href="#")
+                span Terms and Conditions
+            | 				
+            li
+              a(href="#")
+                span FAQs
+            | 				
+            li
+              a(href="#")
+                span Careers
+            | 				
+            li
+              a(href="#")
+                span Contact
+    // ... end Fixed Sidebar Left
+    // Fixed Sidebar Right
+    .fixed-sidebar.right
+      #sidebar-right.fixed-sidebar-right.sidebar--small
+        .mCustomScrollbar(data-mcs-theme="dark")
+          ul.chat-users
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar67-sm.jpg")
+                | 						
+                span.icon-status.online
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar62-sm.jpg")
+                | 						
+                span.icon-status.online
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar68-sm.jpg")
+                | 						
+                span.icon-status.online
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar69-sm.jpg")
+                | 						
+                span.icon-status.away
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar70-sm.jpg")
+                | 						
+                span.icon-status.disconected
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar64-sm.jpg")
+                | 						
+                span.icon-status.online
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar71-sm.jpg")
+                | 						
+                span.icon-status.online
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar72-sm.jpg")
+                | 						
+                span.icon-status.away
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar63-sm.jpg")
+                | 						
+                span.icon-status.status-invisible
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar72-sm.jpg")
+                | 						
+                span.icon-status.away
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar71-sm.jpg")
+                | 						
+                span.icon-status.online
+        | 		
+        .search-friend.inline-items
+          a.js-sidebar-open(href="#")
+            svg.olymp-menu-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-menu-icon")
+        | 		
+        a.olympus-chat.inline-items.js-chat-open(href="#")
+          svg.olymp-chat---messages-icon
+            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+      | 	
+      #sidebar-right-1.fixed-sidebar-right.sidebar--large
+        .mCustomScrollbar(data-mcs-theme="dark")
+          .ui-block-title.ui-block-title-small
+            a.title(href="#") Close Friends
+            | 				
+            a(href="#") Settings
+          | 			
+          ul.chat-users
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar67-sm.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Carol Summers
+                | 						
+                span.status ONLINE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar62-sm.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Mathilda Brinker
+                | 						
+                span.status AT WORK!
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar68-sm.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Carol Summers
+                | 						
+                span.status ONLINE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar69-sm.jpg")
+                | 						
+                span.icon-status.away
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Michael Maximoff
+                | 						
+                span.status AWAY
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar70-sm.jpg")
+                | 						
+                span.icon-status.disconected
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Rachel Howlett
+                | 						
+                span.status OFFLINE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+          | 			
+          .ui-block-title.ui-block-title-small
+            a.title(href="#") MY FAMILY
+            | 				
+            a(href="#") Settings
+          | 			
+          ul.chat-users
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar64-sm.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Sarah Hetfield
+                | 						
+                span.status ONLINE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+          | 			
+          .ui-block-title.ui-block-title-small
+            a.title(href="#") UNCATEGORIZED
+            | 				
+            a(href="#") Settings
+          | 			
+          ul.chat-users
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar71-sm.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Bruce Peterson
+                | 						
+                span.status ONLINE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar72-sm.jpg")
+                | 						
+                span.icon-status.away
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Chris Greyson
+                | 						
+                span.status AWAY
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar63-sm.jpg")
+                | 						
+                span.icon-status.status-invisible
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Nicholas Grisom
+                | 						
+                span.status INVISIBLE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar72-sm.jpg")
+                | 						
+                span.icon-status.away
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Chris Greyson
+                | 						
+                span.status AWAY
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+            | 				
+            li.inline-items.js-chat-open
+              .author-thumb
+                img.avatar(alt="author", src="olympus/src/img/avatar71-sm.jpg")
+                | 						
+                span.icon-status.online
+              | 					
+              .author-status
+                a.h6.author-name(href="#") Bruce Peterson
+                | 						
+                span.status ONLINE
+              | 					
+              .more
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                | 						
+                ul.more-icons
+                  li
+                    svg.olymp-comments-post-icon(data-toggle="tooltip", data-placement="top", data-original-title="START CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                  | 							
+                  li
+                    svg.olymp-add-to-conversation-icon(data-toggle="tooltip", data-placement="top", data-original-title="ADD TO CONVERSATION")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-add-to-conversation-icon")
+                  | 							
+                  li
+                    svg.olymp-block-from-chat-icon(data-toggle="tooltip", data-placement="top", data-original-title="BLOCK FROM CHAT")
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-block-from-chat-icon")
+        | 		
+        .search-friend.inline-items
+          form.form-group
+            input.form-control(placeholder="Search Friends...", value="", type="text")
+          | 			
+          a.settings(href="olympus/src/29-YourAccount-AccountSettings.html")
+            svg.olymp-settings-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-settings-icon")
+          | 			
+          a.js-sidebar-open(href="#")
+            svg.olymp-close-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-close-icon")
+        | 		
+        a.olympus-chat.inline-items.js-chat-open(href="#")
+          h6.olympus-chat-title OLYMPUS CHAT
+          | 			
+          svg.olymp-chat---messages-icon
+            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+    // ... end Fixed Sidebar Right
+    // Fixed Sidebar Right-Responsive
+    .fixed-sidebar.right.fixed-sidebar-responsive
+      #sidebar-right-responsive.fixed-sidebar-right.sidebar--small
+        a.olympus-chat.inline-items.js-chat-open(href="#")
+          svg.olymp-chat---messages-icon
+            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+    // ... end Fixed Sidebar Right-Responsive
+    // Header-BP
+    header#site-header.header
+      .page-title
+        h6 Profile Page
+      | 	
+      .header-content-wrapper
+        form.search-bar.w-search.notification-list.friend-requests
+          .form-group.with-button
+            input.form-control.js-user-search(placeholder="Search here people or pages...", type="text")
+            | 				
+            button
+              svg.olymp-magnifying-glass-icon
+                use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon")
+        | 		
+        a.link-find-friend(href="#") Find Friends
+        | 		
+        .control-block
+          .control-icon.more.has-items
+            svg.olymp-happy-face-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+            | 				
+            .label-avatar.bg-blue 6
+            | 				
+            .more-dropdown.more-with-triangle.triangle-top-center
+              .ui-block-title.ui-block-title-small
+                h6.title FRIEND REQUESTS
+                | 						
+                a(href="#") Find Friends
+                | 						
+                a(href="#") Settings
+              | 					
+              .mCustomScrollbar(data-mcs-theme="dark")
+                ul.notification-list.friend-requests
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar55-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") Tamara Romanoff
+                      | 									
+                      span.chat-message-item Mutual Friend: Sarah Hetfield
+                    | 								
+                    span.notification-icon
+                      a.accept-request(href="#")
+                        span.icon-add.without-text
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                      | 									
+                      a.accept-request.request-del(href="#")
+                        span.icon-minus
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar56-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") Tony Stevens
+                      | 									
+                      span.chat-message-item 4 Friends in Common
+                    | 								
+                    span.notification-icon
+                      a.accept-request(href="#")
+                        span.icon-add.without-text
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                      | 									
+                      a.accept-request.request-del(href="#")
+                        span.icon-minus
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  li.accepted
+                    .author-thumb
+                      img(src="olympus/src/img/avatar57-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      | You and 
+                      a.h6.notification-friend(href="#") Mary Jane Stark
+                      |  just became friends. Write on 
+                      a.notification-link(href="#") her wall
+                      | .
+                    | 								
+                    span.notification-icon
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                      | 									
+                      svg.olymp-little-delete
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+                  | 							
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar58-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") Stagg Clothing
+                      | 									
+                      span.chat-message-item 9 Friends in Common
+                    | 								
+                    span.notification-icon
+                      a.accept-request(href="#")
+                        span.icon-add.without-text
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                      | 									
+                      a.accept-request.request-del(href="#")
+                        span.icon-minus
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              a.view-all.bg-blue(href="#") Check all your Events
+          | 			
+          .control-icon.more.has-items
+            svg.olymp-chat---messages-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+            | 				
+            .label-avatar.bg-purple 2
+            | 				
+            .more-dropdown.more-with-triangle.triangle-top-center
+              .ui-block-title.ui-block-title-small
+                h6.title Chat / Messages
+                | 						
+                a(href="#") Mark all as read
+                | 						
+                a(href="#") Settings
+              | 					
+              .mCustomScrollbar(data-mcs-theme="dark")
+                ul.notification-list.chat-message
+                  li.message-unread
+                    .author-thumb
+                      img(src="olympus/src/img/avatar59-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") Diana Jameson
+                      | 									
+                      span.chat-message-item
+                        | Hi James! It’s Diana, I just wanted to let you know that we have to reschedule...
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") 4 hours ago
+                    | 								
+                    span.notification-icon
+                      svg.olymp-chat---messages-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar60-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") Jake Parker
+                      | 									
+                      span.chat-message-item Great, I’ll see you tomorrow!.
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") 4 hours ago
+                    | 								
+                    span.notification-icon
+                      svg.olymp-chat---messages-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar61-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") Elaine Dreyfuss
+                      | 									
+                      span.chat-message-item We’ll have to check that at the office and see if the client is on board with...
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 9:56pm
+                    | 									
+                    span.notification-icon
+                      svg.olymp-chat---messages-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  li.chat-group
+                    .author-thumb
+                      img(src="olympus/src/img/avatar11-sm.jpg", alt="author")
+                      | 									
+                      img(src="olympus/src/img/avatar12-sm.jpg", alt="author")
+                      | 									
+                      img(src="olympus/src/img/avatar13-sm.jpg", alt="author")
+                      | 									
+                      img(src="olympus/src/img/avatar10-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      a.h6.notification-friend(href="#") You, Faye, Ed & Jet +3
+                      | 									
+                      span.last-message-author Ed:
+                      | 									
+                      span.chat-message-item Yeah! Seems fine by me!
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") March 16th at 10:23am
+                    | 									
+                    span.notification-icon
+                      svg.olymp-chat---messages-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              a.view-all.bg-purple(href="#") View All Messages
+          | 			
+          .control-icon.more.has-items
+            svg.olymp-thunder-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-thunder-icon")
+            | 				
+            .label-avatar.bg-primary 8
+            | 				
+            .more-dropdown.more-with-triangle.triangle-top-center
+              .ui-block-title.ui-block-title-small
+                h6.title Notifications
+                | 						
+                a(href="#") Mark all as read
+                | 						
+                a(href="#") Settings
+              | 					
+              .mCustomScrollbar(data-mcs-theme="dark")
+                ul.notification-list
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar62-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      div
+                        a.h6.notification-friend(href="#") Mathilda Brinker
+                        |  commented on your new 
+                        a.notification-link(href="#") profile status
+                        | .
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") 4 hours ago
+                    | 									
+                    span.notification-icon
+                      svg.olymp-comments-post-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                      | 									
+                      svg.olymp-little-delete
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+                  | 							
+                  li.un-read
+                    .author-thumb
+                      img(src="olympus/src/img/avatar63-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      div
+                        | You and 
+                        a.h6.notification-friend(href="#") Nicholas Grissom
+                        |  just became friends. Write on 
+                        a.notification-link(href="#") his wall
+                        | .
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") 9 hours ago
+                    | 									
+                    span.notification-icon
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                      | 									
+                      svg.olymp-little-delete
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+                  | 							
+                  li.with-comment-photo
+                    .author-thumb
+                      img(src="olympus/src/img/avatar64-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      div
+                        a.h6.notification-friend(href="#") Sarah Hetfield
+                        |  commented on your 
+                        a.notification-link(href="#") photo
+                        | .
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 5:32am
+                    | 									
+                    span.notification-icon
+                      svg.olymp-comments-post-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                    | 								
+                    .comment-photo
+                      img(src="olympus/src/img/comment-photo1.jpg", alt="photo")
+                      | 									
+                      span “She looks incredible in that outfit! We should see each...”
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                      | 									
+                      svg.olymp-little-delete
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+                  | 							
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar65-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      div
+                        a.h6.notification-friend(href="#") Green Goo Rock
+                        |  invited you to attend to his event Goo in 
+                        a.notification-link(href="#") Gotham Bar
+                        | .
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") March 5th at 6:43pm
+                    | 									
+                    span.notification-icon
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                      | 									
+                      svg.olymp-little-delete
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+                  | 							
+                  li
+                    .author-thumb
+                      img(src="olympus/src/img/avatar66-sm.jpg", alt="author")
+                    | 								
+                    .notification-event
+                      div
+                        a.h6.notification-friend(href="#") James Summers
+                        |  commented on your new 
+                        a.notification-link(href="#") profile status
+                        | .
+                      | 									
+                      span.notification-date
+                        time.entry-date.updated(datetime="2004-07-24T18:18") March 2nd at 8:29pm
+                    | 									
+                    span.notification-icon
+                      svg.olymp-heart-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-heart-icon")
+                    | 								
+                    .more
+                      svg.olymp-three-dots-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                      | 									
+                      svg.olymp-little-delete
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+              | 					
+              a.view-all.bg-primary(href="#") View All Notifications
+          | 			
+          .author-page.author.vcard.inline-items.more
+            .author-thumb
+              img.avatar(alt="author", src="olympus/src/img/author-page.jpg")
+              | 					
+              span.icon-status.online
+              | 					
+              .more-dropdown.more-with-triangle
+                .mCustomScrollbar(data-mcs-theme="dark")
+                  .ui-block-title.ui-block-title-small
+                    h6.title Your Account
+                  | 							
+                  ul.account-settings
+                    li
+                      a(href="olympus/src/29-YourAccount-AccountSettings.html")
+                        svg.olymp-menu-icon
+                          use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-menu-icon")
+                        | 										
+                        span Profile Settings
+                    | 								
+                    li
+                      a(href="olympus/src/36-FavPage-SettingsAndCreatePopup.html")
+                        svg.olymp-star-icon.left-menu-icon(data-toggle="tooltip", data-placement="right", data-original-title="FAV PAGE")
+                          use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-star-icon")
+                        | 										
+                        span Create Fav Page
+                    | 								
+                    li
+                      a(href="#")
+                        svg.olymp-logout-icon
+                          use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-logout-icon")
+                        | 										
+                        span Log Out
+                  | 							
+                  .ui-block-title.ui-block-title-small
+                    h6.title Chat Settings
+                  | 							
+                  ul.chat-settings
+                    li
+                      a(href="#")
+                        span.icon-status.online
+                        | 										
+                        span Online
+                    | 								
+                    li
+                      a(href="#")
+                        span.icon-status.away
+                        | 										
+                        span Away
+                    | 								
+                    li
+                      a(href="#")
+                        span.icon-status.disconected
+                        | 										
+                        span Disconnected
+                    | 								
+                    li
+                      a(href="#")
+                        span.icon-status.status-invisible
+                        | 										
+                        span Invisible
+                  | 							
+                  .ui-block-title.ui-block-title-small
+                    h6.title Custom Status
+                  | 							
+                  form.form-group.with-button.custom-status
+                    input.form-control(placeholder="", type="text", value="Space Cowboy")
+                    | 								
+                    button.bg-purple
+                      svg.olymp-check-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-check-icon")
+                  | 							
+                  .ui-block-title.ui-block-title-small
+                    h6.title About Olympus
+                  | 							
+                  ul
+                    li
+                      a(href="#")
+                        span Terms and Conditions
+                    | 								
+                    li
+                      a(href="#")
+                        span FAQs
+                    | 								
+                    li
+                      a(href="#")
+                        span Careers
+                    | 								
+                    li
+                      a(href="#")
+                        span Contact
+            | 				
+            a.author-name.fn(href="olympus/src/02-ProfilePage.html")
+              .author-title
+                | James Spiegel 
+                svg.olymp-dropdown-arrow-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon")
+              | 					
+              span.author-subtitle SPACE COWBOY
+    // ... end Header-BP
+    // Responsive Header-BP
+    header#site-header-responsive.header.header-responsive
+      .header-content-wrapper
+        ul.nav.nav-tabs.mobile-app-tabs(role="tablist")
+          li.nav-item
+            a.nav-link(data-toggle="tab", href="#request", role="tab")
+              .control-icon.has-items
+                svg.olymp-happy-face-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .label-avatar.bg-blue 6
+          | 			
+          li.nav-item
+            a.nav-link(data-toggle="tab", href="#chat", role="tab")
+              .control-icon.has-items
+                svg.olymp-chat---messages-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                | 						
+                .label-avatar.bg-purple 2
+          | 			
+          li.nav-item
+            a.nav-link(data-toggle="tab", href="#notification", role="tab")
+              .control-icon.has-items
+                svg.olymp-thunder-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-thunder-icon")
+                | 						
+                .label-avatar.bg-primary 8
+          | 			
+          li.nav-item
+            a.nav-link(data-toggle="tab", href="#search", role="tab")
+              svg.olymp-magnifying-glass-icon
+                use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon")
+              | 					
+              svg.olymp-close-icon
+                use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-close-icon")
+      // Tab panes
+      .tab-content.tab-content-responsive
+        #request.tab-pane(role="tabpanel")
+          .mCustomScrollbar(data-mcs-theme="dark")
+            .ui-block-title.ui-block-title-small
+              h6.title FRIEND REQUESTS
+              | 					
+              a(href="#") Find Friends
+              | 					
+              a(href="#") Settings
+            | 				
+            ul.notification-list.friend-requests
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar55-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") Tamara Romanoff
+                  | 							
+                  span.chat-message-item Mutual Friend: Sarah Hetfield
+                | 									
+                span.notification-icon
+                  a.accept-request(href="#")
+                    span.icon-add.without-text
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                  | 										
+                  a.accept-request.request-del(href="#")
+                    span.icon-minus
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar56-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") Tony Stevens
+                  | 							
+                  span.chat-message-item 4 Friends in Common
+                | 									
+                span.notification-icon
+                  a.accept-request(href="#")
+                    span.icon-add.without-text
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                  | 										
+                  a.accept-request.request-del(href="#")
+                    span.icon-minus
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              li.accepted
+                .author-thumb
+                  img(src="olympus/src/img/avatar57-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  | You and 
+                  a.h6.notification-friend(href="#") Mary Jane Stark
+                  |  just became friends. Write on 
+                  a.notification-link(href="#") her wall
+                  | .
+                | 									
+                span.notification-icon
+                  svg.olymp-happy-face-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  svg.olymp-little-delete
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+              | 					
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar58-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") Stagg Clothing
+                  | 							
+                  span.chat-message-item 9 Friends in Common
+                | 									
+                span.notification-icon
+                  a.accept-request(href="#")
+                    span.icon-add.without-text
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                  | 										
+                  a.accept-request.request-del(href="#")
+                    span.icon-minus
+                      svg.olymp-happy-face-icon
+                        use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+            | 				
+            a.view-all.bg-blue(href="#") Check all your Events
+        | 		
+        #chat.tab-pane(role="tabpanel")
+          .mCustomScrollbar(data-mcs-theme="dark")
+            .ui-block-title.ui-block-title-small
+              h6.title Chat / Messages
+              | 					
+              a(href="#") Mark all as read
+              | 					
+              a(href="#") Settings
+            | 				
+            ul.notification-list.chat-message
+              li.message-unread
+                .author-thumb
+                  img(src="olympus/src/img/avatar59-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") Diana Jameson
+                  | 							
+                  span.chat-message-item
+                    | Hi James! It’s Diana, I just wanted to let you know that we have to reschedule...
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") 4 hours ago
+                | 									
+                span.notification-icon
+                  svg.olymp-chat---messages-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar60-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") Jake Parker
+                  | 							
+                  span.chat-message-item Great, I’ll see you tomorrow!.
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") 4 hours ago
+                | 									
+                span.notification-icon
+                  svg.olymp-chat---messages-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar61-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") Elaine Dreyfuss
+                  | 							
+                  span.chat-message-item We’ll have to check that at the office and see if the client is on board with...
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 9:56pm
+                | 										
+                span.notification-icon
+                  svg.olymp-chat---messages-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+              | 					
+              li.chat-group
+                .author-thumb
+                  img(src="olympus/src/img/avatar11-sm.jpg", alt="author")
+                  | 							
+                  img(src="olympus/src/img/avatar12-sm.jpg", alt="author")
+                  | 							
+                  img(src="olympus/src/img/avatar13-sm.jpg", alt="author")
+                  | 							
+                  img(src="olympus/src/img/avatar10-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  a.h6.notification-friend(href="#") You, Faye, Ed & Jet +3
+                  | 							
+                  span.last-message-author Ed:
+                  | 							
+                  span.chat-message-item Yeah! Seems fine by me!
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") March 16th at 10:23am
+                | 										
+                span.notification-icon
+                  svg.olymp-chat---messages-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+            | 				
+            a.view-all.bg-purple(href="#") View All Messages
+        | 		
+        #notification.tab-pane(role="tabpanel")
+          .mCustomScrollbar(data-mcs-theme="dark")
+            .ui-block-title.ui-block-title-small
+              h6.title Notifications
+              | 					
+              a(href="#") Mark all as read
+              | 					
+              a(href="#") Settings
+            | 				
+            ul.notification-list
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar62-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  div
+                    a.h6.notification-friend(href="#") Mathilda Brinker
+                    |  commented on your new 
+                    a.notification-link(href="#") profile status
+                    | .
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") 4 hours ago
+                | 										
+                span.notification-icon
+                  svg.olymp-comments-post-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  svg.olymp-little-delete
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+              | 					
+              li.un-read
+                .author-thumb
+                  img(src="olympus/src/img/avatar63-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  div
+                    | You and 
+                    a.h6.notification-friend(href="#") Nicholas Grissom
+                    |  just became friends. Write on 
+                    a.notification-link(href="#") his wall
+                    | .
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") 9 hours ago
+                | 										
+                span.notification-icon
+                  svg.olymp-happy-face-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  svg.olymp-little-delete
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+              | 					
+              li.with-comment-photo
+                .author-thumb
+                  img(src="olympus/src/img/avatar64-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  div
+                    a.h6.notification-friend(href="#") Sarah Hetfield
+                    |  commented on your 
+                    a.notification-link(href="#") photo
+                    | .
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 5:32am
+                | 										
+                span.notification-icon
+                  svg.olymp-comments-post-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-comments-post-icon")
+                | 						
+                .comment-photo
+                  img(src="olympus/src/img/comment-photo1.jpg", alt="photo")
+                  | 							
+                  span “She looks incredible in that outfit! We should see each...”
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  svg.olymp-little-delete
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+              | 					
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar65-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  div
+                    a.h6.notification-friend(href="#") Green Goo Rock
+                    |  invited you to attend to his event Goo in 
+                    a.notification-link(href="#") Gotham Bar
+                    | .
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") March 5th at 6:43pm
+                | 										
+                span.notification-icon
+                  svg.olymp-happy-face-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  svg.olymp-little-delete
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+              | 					
+              li
+                .author-thumb
+                  img(src="olympus/src/img/avatar66-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  div
+                    a.h6.notification-friend(href="#") James Summers
+                    |  commented on your new 
+                    a.notification-link(href="#") profile status
+                    | .
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") March 2nd at 8:29pm
+                | 										
+                span.notification-icon
+                  svg.olymp-heart-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-heart-icon")
+                | 						
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  svg.olymp-little-delete
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+            | 				
+            a.view-all.bg-primary(href="#") View All Notifications
+        | 		
+        #search.tab-pane(role="tabpanel")
+          form.search-bar.w-search.notification-list.friend-requests
+            .form-group.with-button
+              input.form-control.js-user-search(placeholder="Search here people or pages...", type="text")
+      // ... end  Tab panes
+    // ... end Responsive Header-BP
+    .header-spacer
+    // Top Header-Profile
+    .container
+      .row
+        .col.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
+          .ui-block
+            .top-header
+              .top-header-thumb
+                img(src="olympus/src/img/top-header1.jpg", alt="nature")
+              | 					
+              .profile-section
+                .row
+                  .col.col-lg-5.col-md-5.col-sm-12.col-12
+                    ul.profile-menu
+                      li
+                        a.active(href="olympus/src/02-ProfilePage.html") Timeline
+                      | 									
+                      li
+                        a(href="olympus/src/05-ProfilePage-About.html") About
+                      | 									
+                      li
+                        a(href="olympus/src/06-ProfilePage.html") Friends
+                  | 							
+                  .col.col-lg-5.ml-auto.col-md-5.col-sm-12.col-12
+                    ul.profile-menu
+                      li
+                        a(href="olympus/src/07-ProfilePage-Photos.html") Photos
+                      | 									
+                      li
+                        a(href="olympus/src/09-ProfilePage-Videos.html") Videos
+                      | 									
+                      li
+                        .more
+                          svg.olymp-three-dots-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                          | 											
+                          ul.more-dropdown.more-with-triangle
+                            li
+                              a(href="#") Report Profile
+                            | 												
+                            li
+                              a(href="#") Block Profile
+                | 						
+                .control-block-button
+                  a.btn.btn-control.bg-blue(href="olympus/src/35-YourAccount-FriendsRequests.html")
+                    svg.olymp-happy-face-icon
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                  | 							
+                  a.btn.btn-control.bg-purple(href="#")
+                    svg.olymp-chat---messages-icon
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                  | 							
+                  .btn.btn-control.bg-primary.more
+                    svg.olymp-settings-icon
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-settings-icon")
+                    | 								
+                    ul.more-dropdown.more-with-triangle.triangle-bottom-right
+                      li
+                        a(href="#", data-toggle="modal", data-target="#update-header-photo") Update Profile Photo
+                      | 									
+                      li
+                        a(href="#", data-toggle="modal", data-target="#update-header-photo") Update Header Photo
+                      | 									
+                      li
+                        a(href="olympus/src/29-YourAccount-AccountSettings.html") Account Settings
+              | 					
+              .top-header-author
+                a.author-thumb(href="olympus/src/02-ProfilePage.html")
+                  img(src="olympus/src/img/author-main1.jpg", alt="author")
+                | 						
+                .author-content
+                  a.h4.author-name(href="olympus/src/02-ProfilePage.html") James Spiegel
+                  | 							
+                  .country San Francisco, CA
+    // ... end Top Header-Profile
+    .container
+      .row
+        .col.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
+          .ui-block.responsive-flex
+            .ui-block-title
+              .h6.title James’s Friends (86)
+              | 					
+              form.w-search
+                .form-group.with-button
+                  input.form-control(type="text", placeholder="Search Friends...")
+                  | 							
+                  button
+                    svg.olymp-magnifying-glass-icon
+                      use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon")
+              | 					
+              a.more(href="#")
+                svg.olymp-three-dots-icon
+                  use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+    // Friends
+    .container
+      .row
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend1.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar1.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Nicholas Grissom
+                    | 								
+                    .country San Francisco, CA
+                | 				
+                | 						
+                .swiper-container(data-slide="fade")
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 52
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 240
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 16
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend2.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar2.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Marina Valentine
+                    | 								
+                    .country Long Island, NY
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 52
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 240
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 16
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend3.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar3.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Nicholas Grissom
+                    | 								
+                    .country Los Angeles, CA
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 49
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 132
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 5
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend4.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 				
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar4.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Chris Greyson
+                    | 								
+                    .country Austin, TX
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 65
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 104
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 12
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend5.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar5.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Elaine Dreifuss
+                    | 								
+                    .country New York, NY
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 82
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 204
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 27
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend6.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar6.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Bruce Peterson
+                    | 								
+                    .country Austin, TX
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 73
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 360
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 11
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend7.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar7.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Carol Summers
+                    | 								
+                    .country Los Angeles, CA
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 49
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 132
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 5
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+        | 		
+        .col.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+          .ui-block
+            // Friend Item
+            .friend-item
+              .friend-header-thumb
+                img(src="olympus/src/img/friend8.jpg", alt="friend")
+              | 				
+              | 					
+              .friend-item-content
+                .more
+                  svg.olymp-three-dots-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+                  | 							
+                  ul.more-dropdown
+                    li
+                      a(href="#") Report Profile
+                    | 								
+                    li
+                      a(href="#") Block Profile
+                    | 								
+                    li
+                      a(href="#") Turn Off Notifications
+                | 				
+                | 						
+                .friend-avatar
+                  .author-thumb
+                    img(src="olympus/src/img/avatar8.jpg", alt="author")
+                  | 							
+                  .author-content
+                    a.h5.author-name(href="#") Michael Maximoff
+                    | 								
+                    .country Portland, OR
+                | 				
+                | 						
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .friend-count(data-swiper-parallax="-500")
+                        a.friend-count-item(href="#")
+                          .h6 58
+                          | 											
+                          .title Friends
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 304
+                          | 											
+                          .title Photos
+                        | 										
+                        a.friend-count-item(href="#")
+                          .h6 19
+                          | 											
+                          .title Videos
+                      | 									
+                      .control-block-button(data-swiper-parallax="-100")
+                        a.btn.btn-control.bg-blue(href="#")
+                          svg.olymp-happy-face-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-face-icon")
+                        | 				
+                        | 										
+                        a.btn.btn-control.bg-purple(href="#")
+                          svg.olymp-chat---messages-icon
+                            use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-chat---messages-icon")
+                    | 				
+                    | 								
+                    .swiper-slide
+                      p.friend-about(data-swiper-parallax="-500")
+                        | Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
+                      | 				
+                      | 									
+                      .friend-since(data-swiper-parallax="-100")
+                        span Friends Since:
+                        | 										
+                        .h6 December 2014
+                  // If we need pagination
+                  .swiper-pagination
+            // ... end Friend Item
+    // ... end Friends
+    // Window-popup Update Header Photo
+    #update-header-photo.modal.fade(tabindex="-1", role="dialog", aria-labelledby="update-header-photo", aria-hidden="true")
+      .modal-dialog.window-popup.update-header-photo(role="document")
+        .modal-content
+          a.close.icon-close(href="#", data-dismiss="modal", aria-label="Close")
+            svg.olymp-close-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-close-icon")
+          | 			
+          .modal-header
+            h6.title Update Header Photo
+          | 			
+          .modal-body
+            a.upload-photo-item(href="#")
+              svg.olymp-computer-icon
+                use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-computer-icon")
+              | 				
+              h6 Upload Photo
+              | 				
+              span Browse your computer.
+            | 				
+            a.upload-photo-item(href="#", data-toggle="modal", data-target="#choose-from-my-photo")
+              svg.olymp-photos-icon
+                use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-photos-icon")
+              | 			
+              h6 Choose from My Photos
+              | 			
+              span Choose from your uploaded photos
+    // ... end Window-popup Update Header Photo
+    // Window-popup Choose from my Photo
+    #choose-from-my-photo.modal.fade(tabindex="-1", role="dialog", aria-labelledby="choose-from-my-photo", aria-hidden="true")
+      .modal-dialog.window-popup.choose-from-my-photo(role="document")
+        .modal-content
+          a.close.icon-close(href="#", data-dismiss="modal", aria-label="Close")
+            svg.olymp-close-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-close-icon")
+          | 			
+          .modal-header
+            h6.title Choose from My Photos
+            // Nav tabs
+            ul.nav.nav-tabs(role="tablist")
+              li.nav-item
+                a.nav-link.active(data-toggle="tab", href="#home", role="tab", aria-expanded="true")
+                  svg.olymp-photos-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-photos-icon")
+              | 					
+              li.nav-item
+                a.nav-link(data-toggle="tab", href="#profile", role="tab", aria-expanded="false")
+                  svg.olymp-albums-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-albums-icon")
+          | 			
+          .modal-body
+            // Tab panes
+            .tab-content
+              #home.tab-pane.active(role="tabpanel", aria-expanded="true")
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo1.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo2.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo3.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo4.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo5.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo6.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo7.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo8.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  .radio
+                    label.custom-radio
+                      img(src="olympus/src/img/choose-photo9.jpg", alt="photo")
+                      | 									
+                      input(type="radio", name="optionsRadios")
+                | 						
+                a.btn.btn-secondary.btn-lg.btn--half-width(href="#") Cancel
+                | 						
+                a.btn.btn-primary.btn-lg.btn--half-width(href="#") Confirm Photo
+              | 					
+              #profile.tab-pane(role="tabpanel", aria-expanded="false")
+                .choose-photo-item(data-mh="choose-item")
+                  figure
+                    img(src="olympus/src/img/choose-photo10.jpg", alt="photo")
+                    | 								
+                    figcaption
+                      a(href="#") South America Vacations
+                      | 									
+                      span Last Added: 2 hours ago
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  figure
+                    img(src="olympus/src/img/choose-photo11.jpg", alt="photo")
+                    | 								
+                    figcaption
+                      a(href="#") Photoshoot Summer 2016
+                      | 									
+                      span Last Added: 5 weeks ago
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  figure
+                    img(src="olympus/src/img/choose-photo12.jpg", alt="photo")
+                    | 								
+                    figcaption
+                      a(href="#") Amazing Street Food
+                      | 									
+                      span Last Added: 6 mins ago
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  figure
+                    img(src="olympus/src/img/choose-photo13.jpg", alt="photo")
+                    | 								
+                    figcaption
+                      a(href="#") Graffity & Street Art
+                      | 									
+                      span Last Added: 16 hours ago
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  figure
+                    img(src="olympus/src/img/choose-photo14.jpg", alt="photo")
+                    | 								
+                    figcaption
+                      a(href="#") Amazing Landscapes
+                      | 									
+                      span Last Added: 13 mins ago
+                | 						
+                .choose-photo-item(data-mh="choose-item")
+                  figure
+                    img(src="olympus/src/img/choose-photo15.jpg", alt="photo")
+                    | 								
+                    figcaption
+                      a(href="#") The Majestic Canyon
+                      | 									
+                      span Last Added: 57 mins ago
+                | 						
+                a.btn.btn-secondary.btn-lg.btn--half-width(href="#") Cancel
+                | 						
+                a.btn.btn-primary.btn-lg.disabled.btn--half-width(href="#") Confirm Photo
+    // ... end Window-popup Choose from my Photo
+    a.back-to-top(href="#")
+      img.back-icon(src="olympus/src/svg-icons/back-to-top.svg", alt="arrow")
+    // Window-popup-CHAT for responsive min-width: 768px
+    .ui-block.popup-chat.popup-chat-responsive(tabindex="-1", role="dialog", aria-labelledby="update-header-photo", aria-hidden="true")
+      .modal-content
+        .modal-header
+          span.icon-status.online
+          | 			
+          h6.title Chat
+          | 			
+          .more
+            svg.olymp-three-dots-icon
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-three-dots-icon")
+            | 				
+            svg.olymp-little-delete.js-chat-open
+              use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-little-delete")
+        | 		
+        .modal-body
+          .mCustomScrollbar
+            ul.notification-list.chat-message.chat-message-field
+              li
+                .author-thumb
+                  img.mCS_img_loaded(src="olympus/src/img/avatar14-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  span.chat-message-item
+                    | Hi James! Please remember to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get the drinks
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 8:10pm
+              | 					
+              li
+                .author-thumb
+                  img.mCS_img_loaded(src="olympus/src/img/author-page.jpg", alt="author")
+                | 						
+                .notification-event
+                  span.chat-message-item Don’t worry Mathilda!
+                  | 							
+                  span.chat-message-item I already bought everything
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 8:29pm
+              | 					
+              li
+                .author-thumb
+                  img.mCS_img_loaded(src="olympus/src/img/avatar14-sm.jpg", alt="author")
+                | 						
+                .notification-event
+                  span.chat-message-item
+                    | Hi James! Please remember to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get the drinks
+                  | 							
+                  span.notification-date
+                    time.entry-date.updated(datetime="2004-07-24T18:18") Yesterday at 8:10pm
+          | 			
+          form.need-validation
+            .form-group.label-floating.is-empty
+              label.control-label Press enter to post...
+              | 			
+              textarea.form-control(placeholder="")
+              | 			
+              .add-options-message
+                a.options-message(href="#")
+                  svg.olymp-computer-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-computer-icon")
+                | 				
+                .options-message.smile-block
+                  svg.olymp-happy-sticker-icon
+                    use(xlink:href="olympus/src/svg-icons/sprites/icons.svg#olymp-happy-sticker-icon")
+                  | 					
+                  ul.more-dropdown.more-with-triangle.triangle-bottom-right
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat1.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat2.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat3.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat4.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat5.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat6.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat7.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat8.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat9.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat10.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat11.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat12.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat13.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat14.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat15.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat16.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat17.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat18.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat19.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat20.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat21.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat22.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat23.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat24.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat25.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat26.png", alt="icon")
+                    | 						
+                    li
+                      a(href="#")
+                        img(src="olympus/src/img/icon-chat27.png", alt="icon")
+    // ... end Window-popup-CHAT for responsive min-width: 768px
+    // JS Scripts
+    script(src="olympus/src/js/jquery-3.2.1.js")
+    script(src="olympus/src/js/jquery.appear.js")
+    script(src="olympus/src/js/jquery.mousewheel.js")
+    script(src="olympus/src/js/perfect-scrollbar.js")
+    script(src="olympus/src/js/jquery.matchHeight.js")
+    script(src="olympus/src/js/svgxuse.js")
+    script(src="olympus/src/js/imagesloaded.pkgd.js")
+    script(src="olympus/src/js/Headroom.js")
+    script(src="olympus/src/js/velocity.js")
+    script(src="olympus/src/js/ScrollMagic.js")
+    script(src="olympus/src/js/jquery.waypoints.js")
+    script(src="olympus/src/js/jquery.countTo.js")
+    script(src="olympus/src/js/popper.min.js")
+    script(src="olympus/src/js/material.min.js")
+    script(src="olympus/src/js/bootstrap-select.js")
+    script(src="olympus/src/js/smooth-scroll.js")
+    script(src="olympus/src/js/selectize.js")
+    script(src="olympus/src/js/swiper.jquery.js")
+    script(src="olympus/src/js/moment.js")
+    script(src="olympus/src/js/daterangepicker.js")
+    script(src="olympus/src/js/simplecalendar.js")
+    script(src="olympus/src/js/fullcalendar.js")
+    script(src="olympus/src/js/isotope.pkgd.js")
+    script(src="olympus/src/js/ajax-pagination.js")
+    script(src="olympus/src/js/Chart.js")
+    script(src="olympus/src/js/chartjs-plugin-deferred.js")
+    script(src="olympus/src/js/circle-progress.js")
+    script(src="olympus/src/js/loader.js")
+    script(src="olympus/src/js/run-chart.js")
+    script(src="olympus/src/js/jquery.magnific-popup.js")
+    script(src="olympus/src/js/jquery.gifplayer.js")
+    script(src="olympus/src/js/mediaelement-and-player.js")
+    script(src="olympus/src/js/mediaelement-playlist-plugin.min.js")
+    script(src="olympus/src/js/base-init.js")
+    script(defer="", src="olympus/src/fonts/fontawesome-all.js")
+    script(src="Bootstrap/dist/js/bootstrap.bundle.js")
