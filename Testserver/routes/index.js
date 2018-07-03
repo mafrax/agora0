@@ -5,7 +5,8 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.render('register');
+	console.log('TEST');	
+	res.render('test');
 });
 
 router.get('/test/', function(req, res, next) {
@@ -15,6 +16,12 @@ router.get('/test/', function(req, res, next) {
 
 router.get('/test2/', function(req, res, next) {
 	  res.render('profile2');
+	});
+
+
+router.post('/register', function(req, res, next) {
+		console.log('TESTTEST');
+		res.render('register');
 	});
 
 module.exports = router;

@@ -266,30 +266,30 @@ html(lang="en")
               #home.tab-pane.active(role="tabpanel", data-mh="log-tab")
                 .title.h6 Register to Olympus
                 | 						
-                form.content
+                form(role='form', action="/register",method="post").content
                   .row
                     .col.col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12
                       .form-group.label-floating.is-empty
                         label.control-label First Name
                         | 										
-                        input.form-control(placeholder="", type="text")
+                        input.form-control(placeholder="", type="text", name='First Name')
                     | 								
                     .col.col-12.col-xl-6.col-lg-6.col-md-6.col-sm-12
                       .form-group.label-floating.is-empty
                         label.control-label Last Name
                         | 										
-                        input.form-control(placeholder="", type="text")
+                        input.form-control(placeholder="", type="text", name='Last Name')
                     | 								
                     .col.col-12.col-xl-12.col-lg-12.col-md-12.col-sm-12
                       .form-group.label-floating.is-empty
                         label.control-label Your Email
                         | 										
-                        input.form-control(placeholder="", type="email")
+                        input.form-control(placeholder="", type="email", name='email')
                       | 									
                       .form-group.label-floating.is-empty
                         label.control-label Your Password
                         | 										
-                        input.form-control(placeholder="", type="password")
+                        input.form-control(placeholder="", type="password", name='password')
                       | 			
                       | 									
                       .form-group.date-time-picker.label-floating
@@ -320,7 +320,7 @@ html(lang="en")
                             |  of the website
                       | 			
                       | 									
-                      a.btn.btn-purple.btn-lg.full-width(href="#") Complete Registration!
+                      a.btn.btn-purple.btn-lg.full-width(type='submit',value='Sign Up') Complete Registration!
               | 			
               | 					
               #profile.tab-pane(role="tabpanel", data-mh="log-tab")
